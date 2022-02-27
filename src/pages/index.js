@@ -1,5 +1,17 @@
-import React from "react"
-
-export default function Home() {
-  return <div>Hello world!</div>
-}
+import React from 'react';
+import { graphql } from 'gatsby';
+import Layout from '../components/Layout';
+import Hero from '../components/Hero';
+import Services from '../components/Services';
+import Jobs from '../components/Jobs';
+import Projects from '../components/Projects';
+import Blogs from '../components/Blogs';
+const Index = () => {
+  return (
+    <>
+      <Layout>index page</Layout>
+    </>
+  );
+};
+export default Index;
+// ...GatsbyImageSharpFluid
