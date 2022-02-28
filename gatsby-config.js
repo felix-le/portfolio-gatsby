@@ -33,7 +33,12 @@ module.exports = {
         //   collectionTypes : `jobs`, `projects`, `blogs`,
         //   singleType : `about`
         //  ONLY ADD TO ARRAY IF YOU HAVE DATA IN STRAPI !!!!
-        collectionTypes: [`jobs`],
+        collectionTypes: [
+          {
+            name: `jobs`,
+            endpoint: `jobs?populate=*`,
+          },
+        ],
         singleTypes: [],
       },
     },
