@@ -3,7 +3,7 @@
  *
  * See: https://www.gatsbyjs.org/docs/gatsby-config/
  */
-
+const path = require(`path`);
 module.exports = {
   siteMetadata: {
     title: 'WebDev Portfolio',
@@ -18,11 +18,12 @@ module.exports = {
     `gatsby-plugin-sharp`,
     `gatsby-plugin-react-helmet`,
     `gatsby-plugin-sitemap`,
+    `gatsby-transformer-sharp`,
     {
       resolve: `gatsby-source-filesystem`,
       options: {
         name: `assets`,
-        path: `${__dirname}/src/assets/`,
+        path: path.join(__dirname, `src`, `assets`),
       },
     },
     {
