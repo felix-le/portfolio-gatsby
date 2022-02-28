@@ -9,7 +9,10 @@ import Blogs from '../components/Blogs';
 const Index = () => {
   return (
     <>
-      <Layout>index page</Layout>
+      <Layout>
+        <Hero />
+        <Services />
+      </Layout>
     </>
   );
 };
